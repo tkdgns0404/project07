@@ -1,0 +1,33 @@
+spring:
+  mvc:
+    static-path-pattern: /profile/** # static path 에 대한 접근을 인식할 패턴
+  resources:
+    static-locations: file:${serverInfo.upload_path}  # static path 추가 설정
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl # 1. SID 확인해서 "orcl" 부분 수정
+    username: project7 # 2. 오라클 계정 이름(권한만 있으면 계정 이름은 상관 X)
+    password: project7  # 3. 오라클 계정 비밀번호
+    initialization-mode: always # data.sql 을 사용해 항상 초기화
+  jpa:
+    hibernate:
+      ddl-auto: none # 서버 구동 중지시 db 데이터 삭제
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+serverInfo:
+  upload_path: C:\manager\profile # 4. 프로필 파일이 저장될 경로(원하는대로 수정 가능)
+  base_url: http:192.168.1.2:9994/profile/  # 5. IP 는 구동할 PC 의 IP 에 맞춰 변경해야 함
+
+server:
+  port: 9994
+  http2:
+    enabled: false

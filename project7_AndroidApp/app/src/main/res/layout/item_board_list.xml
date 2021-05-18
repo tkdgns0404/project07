@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="board"
+            type="com.example.manager.model.Board" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/check_image_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check_selector" />
+
+        <TextView
+            android:id="@+id/idx_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            style="@style/MemberListItemStyle"
+            android:text="@{String.valueOf(board.idx)}"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"
+            style="@style/MemberListItemStyle"
+            android:text="@{board.title}"
+            tools:text="testId" />
+
+        <TextView
+            android:id="@+id/writer_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"
+            style="@style/MemberListItemStyle"
+            android:text="@{board.writer}"
+            tools:text="홍길동" />
+
+
+        <TextView
+            android:id="@+id/cnt_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"
+            style="@style/MemberListItemStyle"
+            android:text="@{String.valueOf(board.cnt)}"
+            tools:text="0" />
+
+    </LinearLayout>
+</layout>

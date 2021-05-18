@@ -1,0 +1,15 @@
+
+p
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(õÁûÿÿÿÿ8ÚÆ÷˜Ñ.
+n
+java:S1104"QMake phone a static final constant or non-public and provide accessors if needed.(Ñå§Ê8¬”™Ñ.
+x
+java:S1104"[Make passwordConfirm a static final constant or non-public and provide accessors if needed.(ç ©8÷ˆù˜Ñ.
+q
+java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(€­äï8ÚÆ÷˜Ñ.
+s
+java:S1104"VMake profileUrl a static final constant or non-public and provide accessors if needed.(Í¬‘ß8¿ªìšÑ.
+r
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.(¡èÙûÿÿÿÿ8— ø˜Ñ.
+n
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(¬ÉÉ½8ø¯ù˜Ñ.
